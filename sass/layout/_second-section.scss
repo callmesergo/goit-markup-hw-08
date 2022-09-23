@@ -1,0 +1,44 @@
+.second-section__info-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+}
+
+.second-section__about-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--section-grey-color);
+    border-radius: 4px;
+}
+
+.second-section__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+}
+.second {
+    padding-top: 94px;
+
+}
+.second-section {
+    display: flex;
+    align-items: center;
+}
+
+.second-section__about {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.second-section__about-card {
+    flex-basis: calc((100% - 90px) /4);
+}
