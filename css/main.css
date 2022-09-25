@@ -450,10 +450,17 @@ body {
   .site-nav {
     display: flex;
     column-gap: 50px;
+    margin-left: 87px;
   }
   .contacts-top {
     display: block;
     margin-left: 118px;
+  }
+  .top-mail {
+    margin-bottom: 10px;
+  }
+  .mail-icon, .tel-icon {
+    margin-right: 8px;
   }
 }
 .menu-link.current {
@@ -462,7 +469,7 @@ body {
 
 .menu-link.current:after {
   position: absolute;
-  bottom: -12px;
+  bottom: -35px;
   content: "";
   display: block;
   width: 100%;
@@ -506,13 +513,38 @@ body {
 .menu-link .tel-top:focus {
   color: var(--accent-color);
 }
-.menu-link .mail-icon, .menu-link .tel-icon {
+.menu-link .mail-icon,
+.menu-link .tel-icon {
   margin-right: 8px;
 }
 .menu-link .top-mail {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .tel-top,
+.mail-top {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .mail-icon,
+.tel-icon {
+    margin-right: 8px;
+  }
+  .site-nav {
+    margin-left: 92px;
+  }
+  .contacts-top {
+    display: flex;
+    margin-left: auto;
+  }
+  .top-tel {
+    margin-left: 50px;
+  }
+  .menu-link.current:after {
+    bottom: -8px;
+  }
+}
 .page-footer {
   background: var(--alt-dark-color);
   padding-top: 111px;
