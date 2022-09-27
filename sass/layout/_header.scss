@@ -33,8 +33,8 @@
      }
 
      .page-header {
-         padding-top: 32px;
-         padding-bottom: 32px;
+         padding-top: 21px;
+         padding-bottom: 21px;
      }
 
 
@@ -46,12 +46,9 @@
      .site-nav {
          display: flex;
          column-gap: 50px;
-         margin-left: 87px;
+        
      }
 
-     .contacts-top {
-         display: block;
-         margin-left: 118px;
 }
 .top-mail {
      margin-bottom: 10px;
@@ -60,7 +57,16 @@
 .mail-icon, .tel-icon {
 margin-right: 8px;
 }
- }
+.mail-top:hover .mail-icon {
+    fill: var(--accent-color);
+}
+.tel-top:hover .tel-icon {
+    fill: var(--accent-color);
+}
+
+
+
+ 
 
  .menu-link.current {
      color: var(--accent-color);
@@ -68,7 +74,7 @@ margin-right: 8px;
 
  .menu-link.current:after {
      position: absolute;
-     bottom: -35px;
+     bottom: -6px;
      content: "";
      display: block;
      width: 100%;
@@ -104,19 +110,17 @@ margin-right: 8px;
          display: flex;
          align-items: center;
          transition: color var(--transition-dur-and-func);
-
-         &:hover,
-         &:focus {
-             color: var(--accent-color);
-
          }
+     
+     .mail-top:hover,
+     .mail-top:focus {
+        color: var(--accent-color);
      }
 
      .tel-top:hover,
      .tel-top:focus {
          color: var(--accent-color);
      }
-
      .mail-icon,
      .tel-icon {
         
@@ -131,11 +135,26 @@ margin-right: 8px;
 
 
 @media screen and (min-width: 1200px) {
+    .page-header {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 .tel-top,
 .mail-top {
 font-size: 14px;
     line-height: 1.14;
 }
+.mail-top:hover,
+.mail-top:focus .mail-icon {
+    fill: var(--accent-color);
+}
+
+
+.tel-top:focus .tel-icon {
+    fill: var(--accent-color);
+}
+
+
 .mail-icon,
 .tel-icon {
     margin-right: 8px;
@@ -152,31 +171,9 @@ font-size: 14px;
   }
   .menu-link.current:after {
     bottom: -8px;
-
 }
 }       
 
-        
-    
-    
-
-
-
-
-        //   .page-header {
-//      padding-top: 32px;
-//      padding-bottom: 32px;
-//  border-bottom: 1px solid #ECECEC
-//  }
-
-//  .div-header {
-//       display: flex;
-//       align-items: center;
-//   }
-
-
-
-//   }
 
 
 

@@ -21,6 +21,7 @@
     position: relative;
     padding-left: 40px;
     padding-top: 48px;
+    padding-bottom: 48px;
 }
 .mobile-menu__close-btn {
     position: absolute;
@@ -86,8 +87,12 @@
 .mobile-menu-item__mail {
     margin-top: 32px;
 }
+
 .mobile-menu-contacts {
     margin-top: 302px;
+}
+.mobile-menu-social-link {
+    margin-top: 64px;
 }
 
 .social-list__item {
@@ -96,14 +101,14 @@
 font-style: Medium;
 font-size: 18px;
 line-height: 1.2;
+
 color: var(--accent-color);
 &:not(:last-child):after {
     content: '|';
     
+
+    
     
 
 }
-}
-.mobile-menu-social-link {
-    margin-top: 64px;
 }
