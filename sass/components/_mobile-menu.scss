@@ -31,6 +31,9 @@
     padding: 0;
     line-height: 0;
     background-color: transparent;
+    &:hover {
+        fill: var(--accent-color);
+    }
 }
 .mobile-menu__close-icon {
     width: 18px;
