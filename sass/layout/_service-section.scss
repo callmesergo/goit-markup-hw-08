@@ -1,5 +1,13 @@
+
+@media screen and (max-width: 1199px) {
+    .service {
+    display: none;
+}
+}
+
+@media screen and (min-width: 1200px) {
+
 .service {
-    padding-top: 118px;
     padding-bottom: 94px;
 }
 
@@ -37,4 +45,4 @@
     justify-content: center;
     align-items: center;
 }
-
+}
