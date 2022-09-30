@@ -1,10 +1,18 @@
-
+@media screen and (min-width: 480px) {
+    .section-our-team {
+            background-color: var(--section-grey-color);
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
 .team {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     color: var(--title-text-color);
+}
+.team-text-prop {
+    padding: 30px 32px 30px 32px;
 }
 
 .profession {
@@ -15,43 +23,29 @@
     color: var(--primary-text-color);
     margin-top: 10px;
 }
-
-
 .team-place {
 
     background-color: var(--alt-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-
-.section-our-team {
-    background-color: var(--section-grey-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-
-
 .our-team {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 30px;
+    gap: 30px;
 
 }
-
-.team-text-prop {
-    padding: 30px 32px 30px 32px;
-
+.social-list-icon {
+    height: 20px;
+    width: 20px;
 }
-
 .social-list {
     display: flex;
     justify-content: center;
     column-gap: 10px;
     margin-top: 16px;
 }
-
 .social-list-link {
     display: flex;
     align-items: center;
@@ -62,21 +56,54 @@
     background-color: var(--alt-color);
     fill: var(--icon-grey-color);
     transition: fill var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
-&:hover,
-&:focus {
+
+    &:hover,
+    &:focus {
         background-color: var(--accent-color);
     }
 }
 
 
 
-
-
-.social-list-icon {
-    height: 20px;
-    width: 20px;
-    .social-list-link:hover &,
-        .social-list-link:focus & {
-            fill: var(--alt-color);
-        }
 }
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .section-our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+        }
+    .social-list-icon {
+        .social-list-link:hover &,
+         .social-list-link:focus & {
+            fill: var(--alt-color);
+                    }
+                }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
