@@ -54,7 +54,7 @@ screen and (min-resolution: 2dppx) and (mix-width: 768px) {
         width: 700px;
     }
     .hero {
-        max-width: 1680px;
+        background-size: 1680px;
         background-image: url('../images/hero/hero.desktop.jpg');
         }
         .hero-title {

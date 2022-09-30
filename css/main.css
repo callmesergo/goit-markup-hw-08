@@ -835,7 +835,7 @@ body {
     width: 700px;
   }
   .hero {
-    max-width: 1680px;
+    background-size: 1680px;
     background-image: url("../images/hero/hero.desktop.jpg");
   }
   .hero-title {
