@@ -13,10 +13,11 @@
 }
 .team-text-prop {
    
-
     padding: 30px 32px 30px 32px;
 }
-
+.team-img {
+    width: 100%;
+}
 .profession {
     font-weight: 400;
     font-size: 16px;
@@ -69,10 +70,19 @@
 
 
 }
+@media screen and (min-width: 480px) {
+.team-place {
+    width: calc((100% - 30px) / 1)
+}
+
+
+
 
 @media screen and (min-width: 768px) {
 
-
+.team-place {
+        width: calc((100% - 30px) / 2)
+    }
 
 }
 
@@ -96,8 +106,14 @@
             fill: var(--alt-color);
                     }
                 }
+        .team-place {
+            width: calc((100% - 30px) / 4)
+        }
+        .our-team {
+            flex-wrap: nowrap;
+        }
 
-}
+} }
 
 
 

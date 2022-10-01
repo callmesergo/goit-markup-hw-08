@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+
 .modal-form {
     width: 100%;
     display: flex;
@@ -163,16 +163,17 @@ color: rgba(117, 117, 117, 0.5);
             display: block;
         }
 }
-}
+
 @media screen and (min-width: 1200px) {
     .modal-title {
         line-height: 1.15;
     }
-}
+
      .policy-text {
         font-size: 14px;
         line-height: 1.71;
      }
+    }
 
 
 
@@ -180,7 +181,3 @@ color: rgba(117, 117, 117, 0.5);
 
 
 
-
-//   (1200px policy text)
-//    font-size: 14px;
-//    line-height: 1.71;

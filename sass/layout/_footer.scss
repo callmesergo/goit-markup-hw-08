@@ -61,15 +61,6 @@
 
 }
 
-.footer-general-div {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-div-two {
-    margin-left: 70px;
-}
-
 .footer-social-links {
     display: flex;
     justify-content: center;
@@ -96,14 +87,6 @@
     }
 }
 
-.footer-div-three {
-    margin-left: 93px;
-    display: flex;
-    flex-direction: column;
-
-
-}
-
 .subscribe {
     font-style: normal;
     font-weight: 700;
@@ -115,18 +98,17 @@
     margin-bottom: 20px;
 }
 
-.footer-form {
-    display: flex;
-}
+
 
 .footer-label-input {
     display: block;
+    width: 100%;
 }
 
 .subscribe-input {
     display: block;
     height: 50px;
-    width: 358px;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -144,7 +126,8 @@
 }
 
 .subscribe-btn {
-    display: inline-flex;
+
+    display: block;
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -153,10 +136,8 @@
     letter-spacing: 0.06em;
     color: var(--alt-color);
     background: var(--accent-color);
-
+    margin-top: 20px;
     padding: 10px 28px;
-    margin-left: 12px;
-
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -171,12 +152,82 @@
 }
 
 .footer-send-icon {
-
     width: 24px;
     height: 24px;
     fill: var(--alt-color);
     margin-left: 10px;
+}
+.footer-div-two {
 
+.footer-div-three {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 
+.footer-label-input {
+    width: 100%;
+}
+
+.footer-general-div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    column-gap: 60px;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 768px) {
+    .footer-general-div {
+        
+        align-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    // .footer-general-div {
+        
+    //     flex-wrap: nowrap;
+    //     align-items: baseline;
+    // }
+
+    .footer-form {
+        display: flex;
+    }
+
+    .footer-label-input {
+        display: block;
+    }
+
+    .subscribe-input {
+        display: block;
+        height: 50px;
+        width: 358px;
+    }
+
+    // .footer-div-three {
+    //     margin-left: auto;
+    //     display: flex;
+
+    // }
+
+    .subscribe-btn {
+        display: inline-flex;
+        margin-left: 12px;
+        margin-top: 0px;
+    }
+
+   
+}}
