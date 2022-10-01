@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+
     .section-our-team {
             background-color: var(--section-grey-color);
             padding-top: 60px;
@@ -24,7 +24,8 @@
     margin-top: 10px;
 }
 .team-place {
-
+    max-width: 450px;
+    max-height: 622px;
     background-color: var(--alt-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -61,11 +62,24 @@
     &:focus {
         background-color: var(--accent-color);
     }
-}
+.team-one {
+width: 450px;
+height: 460px;
 
 
 
 }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+
+}
+
+
 
 
 

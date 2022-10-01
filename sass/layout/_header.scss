@@ -1,3 +1,12 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  @media screen and (max-width: 767px) {
      .site-nav {
          display: none;
@@ -16,6 +25,7 @@
  }
 
  .div-header {
+    width: 100%;
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -135,6 +145,10 @@ margin-right: 8px;
 
 
 @media screen and (min-width: 1200px) {
+
+
+
+
     .page-header {
         padding-top: 32px;
         padding-bottom: 32px;
@@ -165,6 +179,7 @@ font-size: 14px;
  .contacts-top {
      display: flex;
      margin-left: auto;
+     
  }
 .top-tel {
       margin-left: 50px;
@@ -172,6 +187,7 @@ font-size: 14px;
   .menu-link.current:after {
     bottom: -8px;
 }
+
 }       
 
 
