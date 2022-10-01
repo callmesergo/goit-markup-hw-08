@@ -63,7 +63,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 }
 @media screen and (min-width: 1200px) {
     .div-hero {
-        width: 700px;
+        max-width: 700px;
         
     }
     .hero {

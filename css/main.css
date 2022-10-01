@@ -852,7 +852,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .div-hero {
-    width: 700px;
+    max-width: 700px;
   }
   .hero {
     padding-top: 200px;
@@ -1053,8 +1053,6 @@ body {
 }
 
 .team-place {
-  max-width: 450px;
-  max-height: 622px;
   background-color: var(--alt-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1092,10 +1090,6 @@ body {
 }
 .social-list-link:hover, .social-list-link:focus {
   background-color: var(--accent-color);
-}
-.social-list-link .team-one {
-  width: 450px;
-  height: 460px;
 }
 
 @media screen and (min-width: 1200px) {
