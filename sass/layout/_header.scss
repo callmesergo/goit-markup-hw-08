@@ -58,7 +58,7 @@
         
      }
 
-}
+
 .top-mail {
      margin-bottom: 10px;
 }
@@ -73,17 +73,13 @@ margin-right: 8px;
     fill: var(--accent-color);
 }
 
-
-
- 
-
  .menu-link.current {
      color: var(--accent-color);
  }
 
  .menu-link.current:after {
      position: absolute;
-     bottom: -6px;
+     bottom: -2px;
      content: "";
      display: block;
      width: 100%;
@@ -107,7 +103,7 @@ margin-right: 8px;
      &:focus {
          color: var(--accent-color);
      }
-
+    }
      .tel-top,
      .mail-top {
          font-weight: 500;
@@ -140,8 +136,8 @@ margin-right: 8px;
          margin-bottom: 10px;
 
      }
- }
-
+ 
+    }
 
 @media screen and (min-width: 1200px) {
 
