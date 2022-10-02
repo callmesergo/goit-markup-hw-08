@@ -25,6 +25,11 @@ height: 92px;
 
     border: 1px solid var(--icon-grey-color);
     border-radius: 4px;
+    &:hover,
+    &:focus {
+            fill: var(--accent-color);
+            border-color: var(--accent-color);
+        }
 
 }
 
@@ -49,11 +54,8 @@ height: 92px;
 
 .client-list-item { 
     width: 170px;
-&:hover,
-&:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}}
+
+}
 
 
 }

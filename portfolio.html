@@ -21,7 +21,7 @@
   <body>
     <header class="page-header">
       <div class="container div-header">
-        <nav class="main-nav">
+       <nav class="main-nav">
           <a href="/" class="logo">Web<span class="studio-word">Studio</span></a>
 
           <ul class="site-nav list">
@@ -30,6 +30,11 @@
             <li class="site-nav-li"><a href="" class="menu-link">Контакти</a></li>
           </ul>
         </nav>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
         <ul class="contacts-top list">
           <li class="top-mail">
             <a href="mailto:info@devstudio.com" class="mail-top link">
@@ -49,13 +54,41 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav-list list">
+            <li class="nav-list__item"><a href="" class="mobile-list__link link">Студія</a></li>
+            <li class="nav-list__item"><a href="" class="mobile-list__link link">Портфоліо</a></li>
+            <li class="nav-list__item"><a href="" class="mobile-list__link link">Контакти</a></li>
+          </ul>
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-item__tel">
+              <a href="tel:+380961111111" class="item__tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-item__mail">
+              <a href="mailto:info@devstudio.com" class="item__mail">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-social-link list">
+            <li class="social-list__li"><a href="" class="social-list__item">Instagram</a></li>
+            <li class="social-list__li"><a href="" class="social-list__item">Twitter</a></li> 
+             <li class="social-list__li"><a href="" class="social-list__item">Facebook</a></li>
+             <li class="social-list__li"><a href="" class="social-list__item">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <main>
-      <!-- <section class="portfolio-hero">
+   <main>
+      <section class="portfolio-hero">
         <div class="container portfolio">
           <h1 class="visually-hidden">меню фільтр</h1>
           <ul class="portfolio-button list">
-            <li><button type="button" class="button">Усі</button></li>
+            <li class="all-btn"><button type="button" class="button">Усі</button></li>
             <li><button type="button" class="button">Веб-сайти</button></li>
             <li><button type="button" class="button">Додатки</button></li>
             <li><button type="button" class="button">Дизайн</button></li>
@@ -66,7 +99,24 @@
             <a href="" class="portfolio-link link>
               <li class="project-card">
                  <div class="overlay">
-              <img src="./images/img01.jpg" alt="фото-веб-сайт" width="370" />
+                   <picture>
+                <source
+                  srcset="./images/portfolio/img01.desktop.jpg 1x, ./images/portfolio/img01.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img01.tablet.jpg 1x, ./images/portfolio/img01.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img01.mobile.jpg 1x, ./images/portfolio/img01.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img class="portfolio-img" src="./images/portfolio/img01.mobile.jpg" alt="фото-веб-сайт" />
+              </picture>
              <p class="text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
               <div class="project-card-prop">
                 <h2 class="project-name">Технокряк</h2>
@@ -77,9 +127,27 @@
              <a href="" class="portfolio-link link>
             <li class="project-card">
               <div class="overlay">
-              <img src="./images/img02.jpg" alt="фото-дизайн" width="370" /> <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, libero!</p></div>
+                 <picture>
+                <source
+                  srcset="./images/portfolio/img02.desktop.jpg 1x, ./images/portfolio/img02.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img02.tablet.jpg 1x, ./images/portfolio/img02.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img02.mobile.jpg 1x, ./images/portfolio/img02.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img class="portfolio-img" src="./images/portfolio/img02.mobile.jpg" alt="фото-дизайн" />
+              </picture>
+               <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, libero!</p></div>
               <div class="project-card-prop">
-                <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
+                <h2 class="project-name project-text-mod">Постер New Orlean vs Golden Star</h2>
                 <p class="project-type">Дизайн</p>
               </div>
             </li>
@@ -87,7 +155,25 @@
              <a href="" class="portfolio-link link>
             <li class="project-card">
                <div class="overlay">
-              <img src="./images/img03.jpg" alt="фото-додаток" width="370" /><p class="text-overlay">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corporis!</p></div>
+                 <picture>
+                <source
+                  srcset="./images/portfolio/img03.desktop.jpg 1x, ./images/portfolio/img03.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img03.tablet.jpg 1x, ./images/portfolio/img03.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img03.mobile.jpg 1x, ./images/portfolio/img03.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img class="portfolio-img" src="./images/portfolio/img03.mobile.jpg" alt="фото-додаток" />
+              </picture>
+              <p class="text-overlay">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corporis!</p></div>
               <div class="project-card-prop">
                 <h2 class="project-name">Ресторан Seafood</h2>
                 <p class="project-type">Додаток</p>
@@ -97,7 +183,25 @@
              <a href="" class="portfolio-link link>
             <li class="project-card">
               <div class="overlay">
-              <img src="./images/img04.jpg" alt="фото-маркетинг" width="370" /><p class="text-overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, voluptate.</p></div>
+                 <picture>
+                <source
+                  srcset="./images/portfolio/img04.desktop.jpg 1x, ./images/portfolio/img04.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img04.tablet.jpg 1x, ./images/portfolio/img04.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img04.mobile.jpg 1x, ./images/portfolio/img04.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img class="portfolio-img" src="./images/portfolio/img04.mobile.jpg" alt="фото-маркетинг" />
+              </picture>
+              <p class="text-overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, voluptate.</p></div>
               <div class="project-card-prop">
                 <h2 class="project-name">Проєкт Prime</h2>
                 <p class="project-type">Маркетинг</p>
@@ -107,7 +211,25 @@
              <a href="" class="portfolio-link link>
             <li class="project-card">
               <div class="overlay">
-              <img src="./images/img05.jpg" alt="фото-додаток2" width="370" /><p class="text-overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, accusamus.</p></div>
+                 <picture>
+                <source
+                  srcset="./images/portfolio/img05.desktop.jpg 1x, ./images/portfolio/img05.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img05.tablet.jpg 1x, ./images/portfolio/img05.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img05.mobile.jpg 1x, ./images/portfolio/img05.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img class="portfolio-img" src="./images/portfolio/img05.mobile.jpg" alt="фото-додаток2" />
+              </picture>
+              <p class="text-overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, accusamus.</p></div>
               <div class="project-card-prop">
                 <h2 class="project-name">Проєкт Boxes</h2>
                 <p class="project-type">Додаток</p>
@@ -117,7 +239,25 @@
              <a href="" class="portfolio-link link>
             <li class="project-card">
               <div class="overlay">
-              <img src="./images/img06.jpg" alt="фото-веб-сайт2" width="370" /><p class="text-overlay">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, reiciendis.</p></div>
+                 <picture>
+                <source
+                  srcset="./images/portfolio/img06.desktop.jpg 1x, ./images/portfolio/img06.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img06.tablet.jpg 1x, ./images/portfolio/img06.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img06.mobile.jpg 1x, ./images/portfolio/img06.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img class="portfolio-img" src="./images/portfolio/img06.mobile.jpg" alt="фото-веб-сайт2" />
+              </picture>
+              <p class="text-overlay">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, reiciendis.</p></div>
               <div class="project-card-prop">
                 <h2 class="project-name">Inspiration has no Borders</h2>
                 <p class="project-type">Веб-сайт</p>
@@ -127,7 +267,25 @@
              <a href="" class="portfolio-link link>
             <li class="project-card">
               <div class="overlay">
-              <img src="./images/img07.jpg" alt="фото-дизайн2" width="370" /><p class="text-overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, vel?</p></div>
+                 <picture>
+                <source
+                  srcset="./images/portfolio/img07.desktop.jpg 1x, ./images/portfolio/img07.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img07.tablet.jpg 1x, ./images/portfolio/img07.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img07.mobile.jpg 1x, ./images/portfolio/img07.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img class="portfolio-img" src="./images/portfolio/img07.mobile.jpg" alt="фото-дизайн2" />
+              </picture>
+              <p class="text-overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, vel?</p></div>
               <div class="project-card-prop">
                 <h2 class="project-name">Видання Limited Edition</h2>
                 <p class="project-type">Дизайн</p>
@@ -137,7 +295,25 @@
              <a href="" class="portfolio-link link>
             <li class="project-card">
               <div class="overlay">
-              <img src="./images/img08.jpg" alt="фото-маркетинг" width="370" /><p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto.</p></div>
+                 <picture>
+                <source
+                  srcset="./images/portfolio/img08.desktop.jpg 1x, ./images/portfolio/img08.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img08.tablet.jpg 1x, ./images/portfolio/img08.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img08.mobile.jpg 1x, ./images/portfolio/img08.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img class="portfolio-img" src="./images/portfolio/img08.mobile.jpg" alt="фото-маркетинг" />
+              </picture>
+              <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iusto.</p></div>
               <div class="project-card-prop">
                 <h2 class="project-name">Проєкт LAB</h2>
                 <p class="project-type">Маркетинг</p>
@@ -147,7 +323,25 @@
              <a href="" class="portfolio-link link>
             <li class="project-card">
               <div class="overlay">
-              <img src="./images/img09.jpg" alt="фото-додаток2" width="370" /><p class="text-overlay">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, expedita.</p></div>
+                 <picture>
+                <source
+                  srcset="./images/portfolio/img09.desktop.jpg 1x, ./images/portfolio/img09.desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img09.tablet.jpg 1x, ./images/portfolio/img09.tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/portfolio/img09.mobile.jpg 1x, ./images/portfolio/img09.mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+              <img class="portfolio-img" src="./images/portfolio/img09.mobile.jpg" alt="фото-додаток2" />
+              </picture>
+              <p class="text-overlay">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, expedita.</p></div>
               <div class="project-card-prop">
                 <h2 class="project-name">Growing Business</h2>
                 <p class="project-type">Додаток</p>
@@ -159,72 +353,64 @@
         </div>
       </section>
     </main>
-       <footer class="page-footer">
+     <footer class="page-footer">
       <div class="container footer-general-div">
-        <div class="footer-div-one">
-          <a href="/" class="logo-footer"
-            >Web<span class="studio-word-footer">Studio</span></a
-          >
-          <address>
-            <ul class="contacts-bottom list">
-              <li>
-                <a
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="adress-bottom link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li>
-                <a href="mailto:info@devstudio.com" class="mail-bottom link"
-                  >info@devstudio.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:+380961111111" class="tel-bottom link"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-
-        <div class="footer-div-two">
-          <p class="join-us">Приєднуйтесь</p>
-
-          <ul class="footer-social-links list">
-            <li class="social-li-footer">
-              <a href="" class="social-link-footer link">
-                <svg class="social-icon-footer">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
+       <div class="footer-div-one">
+        <a href="/" class="logo-footer">Web<span class="studio-word-footer">Studio</span></a>
+        <address>
+          <ul class="contacts-bottom list">
+            <li>
+              <a
+                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="adress-bottom link"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
             </li>
-            <li class="social-li-footer">
-              <a href="" class="social-link-footer link">
-                <svg class="social-icon-footer">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mail-bottom link">info@devstudio.com </a>
             </li>
-            <li class="social-li-footer">
-              <a href="" class="social-link-footer link">
-                <svg class="social-icon-footer">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-li-footer">
-              <a href="" class="social-link-footer link">
-                <svg class="social-icon-footer">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
+            <li><a href="tel:+380961111111" class="tel-bottom link">+38 096 111 11 11</a></li>
           </ul>
+        </address>
         </div>
-        <div class="footer-div-three">
+      
+      <div class="footer-div-two">
+        <h4 class="join-us">приєднуйтесь</h4>
+        
+        <ul class="footer-social-links list">
+          <li class="social-li-footer">
+            <a href="" class="social-link-footer link">
+              <svg class="social-icon-footer">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-li-footer">
+            <a href="" class="social-link-footer link">
+              <svg class="social-icon-footer">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-li-footer">
+            <a href="" class="social-link-footer link">
+              <svg class="social-icon-footer">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-li-footer">
+            <a href="" class="social-link-footer link">
+              <svg class="social-icon-footer">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+       <div class="footer-div-three">
           <p class="subscribe">Підпишіться на розсилку</p>
           <form class="footer-form">
             <label class="footer-label-input">
@@ -243,56 +429,8 @@
           </form>
         </div>
       </div>
-    </footer> 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="modal-close-icon" width="11" height="11">
-            <use href="./images/icons.svg#icon-close-btn"></use>
-          </svg>
-        </button>
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal-form">
-         
-          <label class="label-form-name"><span>Ім'я</span></label>
-           <span class="wrapper-input">
-          <input class="input-modal-form" type="text" name="user_name" pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+" required />
-        <svg class="modal-form-icon icon-shadow" width="12px" height="12px">
-          <use class="modal-form-icon-link" href="./images/icons.svg#icon-input-name2"></use>
-        </svg>
-      </span>
-         
-          <label class="label-form-name"> <span>Телефон</span></label>
-           <span class="wrapper-input">
-          <input class="input-modal-form" type="tel" name="user_tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required/>
-        <svg class="modal-form-icon icon-shadow" width="18px" height="18px">
-          <use href="./images/icons.svg#icon-input-phone"></use>
-        </span>
-         <label class="label-form-name"><span>Пошта</span></label>
-           <span class="wrapper-input">
-          <input class="input-modal-form" type="email" name="user_email" required/>
-          <svg class="modal-form-icon" width="18px" height="18px">
-          <use href="./images/icons.svg#icon-input-mail"></use>
-          </span>
-          <label class="label-form-name" for="comment"><span>Коментар</span></label>
-          <textarea
-            class="textarea-modal-form"
-            name="user_comment"
-            id="comment"
-            placeholder="Введіть текст"></textarea>
-          <label class="checkbox-area-label">
-           
-            <input class="policy-checkbox" type="checkbox" />
-             <svg class="custom-checkbox">
-                <use class="icon-custom-checkbox" href="./images/icons.svg#icon-custom-cb"></use>
-              </svg>
-           <span class="policy-text">Погоджуюся з
-            розсилкою та приймаю&nbsp;<a href="" class="policy-link-modal">
-             Умови договору</a> </span> </label>
-          <button class="submit-modal-btn" type="submit">Відправити </button>
-        </form>
-      </div>  
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script> -->
+    </footer>
+        
+    <script src="./js/menu.js"></script>     
   </body>
 </html>

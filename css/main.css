@@ -1060,6 +1060,10 @@ body {
   border: 1px solid var(--icon-grey-color);
   border-radius: 4px;
 }
+.client-list-item:hover, .client-list-item:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 @media screen and (min-width: 768px) {
   .client-list-item {
@@ -1073,10 +1077,6 @@ body {
   }
   .client-list-item {
     width: 170px;
-  }
-  .client-list-item:hover, .client-list-item:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1221,14 +1221,14 @@ body {
 }
 
 .portfolio-hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .portfolio-button {
   display: flex;
-  justify-content: center;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .project {
@@ -1236,7 +1236,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 34px;
+  margin-top: 40px;
 }
 
 .project-card-prop {
@@ -1311,4 +1311,39 @@ body {
   line-height: 1, 8;
   color: var(--primary-text-color);
   margin-top: 4px;
+}
+
+.project-card {
+  width: calc((100% - 30px) / 1);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-link {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .portfolio-button {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+  }
+  .project {
+    margin-top: 30px;
+  }
+  .project-card {
+    width: calc((100% - 30px) / 2);
+  }
+  .project-text-mod {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-hero {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .project {
+    margin-top: 34px;
+  }
 }/*# sourceMappingURL=main.css.map */
