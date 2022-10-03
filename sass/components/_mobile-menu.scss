@@ -50,12 +50,16 @@
        background: transparent;
        padding: 0;
        line-height: 0;
+       
    }
 
 .open-mobile-menu-btn__icon {
        width: 40px;
        height: 40px;
        border: none;
+       &:hover {
+        fill: var(--accent-color);
+       }
    }
 
 .mobile-list__link {

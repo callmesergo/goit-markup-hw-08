@@ -122,7 +122,6 @@
 .portfolio-link {
         display: flex;
         flex-direction: column;
-        flex-grow: 1;
     }
 
 
@@ -157,8 +156,7 @@
 .project {
  margin-top: 34px;
 }
-.project-card {
-    // width: calc((100% - 30px) / 3)
+.portfolio-link {
+flex-grow: 1;
 }
-
 }

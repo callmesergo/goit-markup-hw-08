@@ -2,11 +2,11 @@
 .modal {
         padding: 40px;
         position: absolute;
-        top: 50%;
+        top: 20px;
         left: 50%;
         max-width: 450px;
         max-height: 609px;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%);
         background-color: var(--alt-color);
 }
 @media screen and (min-width: 480px) {
